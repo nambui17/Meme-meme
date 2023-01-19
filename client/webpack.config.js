@@ -32,8 +32,8 @@ module.exports = () => {
         description: 'Text Editor Application',
         background_color: '#225ca3',
         theme_color: '#225ca3',
-        start_url: '/',
-        publicPath: '/',
+        start_url: './',
+        publicPath: './',
         inject: true,
         fingerprints: false,
         icons: [
