@@ -27,13 +27,13 @@ module.exports = () => {
         swDest: 'src-sw.js'
       }),
       new WebpackPwaManifest({
-        name: 'My Text Editor Application',
-        short_name: "MyText",
+        name: 'Just Another Text Editor Application',
+        short_name: "JATE",
         description: 'Text Editor Application',
         background_color: '#225ca3',
         theme_color: '#225ca3',
-        start_url: './',
-        publicPath: './',
+        start_url: '/',
+        publicPath: '/',
         inject: true,
         fingerprints: false,
         icons: [
