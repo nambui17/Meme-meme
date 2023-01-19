@@ -30,7 +30,12 @@ module.exports = () => {
         name: 'My Text Editor Application',
         short_name: "MyText",
         description: 'Text Editor Application',
+<<<<<<< Updated upstream
         background_color: '#272822',
+=======
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
+>>>>>>> Stashed changes
         start_url: './',
         publicPath: './',
         inject: true,
