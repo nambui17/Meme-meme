@@ -27,8 +27,8 @@ module.exports = () => {
         swDest: 'src-sw.js'
       }),
       new WebpackPwaManifest({
-        name: 'My Text Editor Application',
-        short_name: "MyText",
+        name: 'Just Another Text Editor Application',
+        short_name: "JATE",
         description: 'Text Editor Application',
         background_color: '#225ca3',
         theme_color: '#225ca3',
@@ -54,13 +54,14 @@ module.exports = () => {
         },
         {
           test: /\.m?js$/,
-          exclude: /(node_modules|bower_components)/,
+          exclude: /node_modules/,
           use: {
             loader: 'babel-loader',
             options: {
-              presets: ['@babel/preset-env']
-            }
-          }
+              presets: ['@babel/preset-env'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
+            },
+          },
         },
       ],
     },
